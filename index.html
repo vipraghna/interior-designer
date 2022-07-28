@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>welcome to unique designeres</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#search").click(function () {
+          $("#suggbox").slideToggle("fast");
+        });
+      });
+    </script>
+    <style>
+      body {
+        background: white;
+      }
+  .carousel-cell{
+    padding: 0 10px;
+  }
+
+
+      /* Auto carousal-1 Media query */
+
+      @media (max-width: 3000px) {
+        img.a {
+          height: 770px;
+        }
+      }
+
+      @media (max-width: 25000px) {
+        img.a {
+          height: 670px;
+        }
+      }
+
+      @media (max-width: 1350px) {
+        img.a {
+          height: 670px;
+        }
+      }
+
+      @media (max-width: 1200px) {
+        img.a {
+          height: 640px;
+        }
+      }
+
+      @media (max-width: 1100px) {
+        img.a {
+          height: 610px;
+        }
+      }
+
+      @media (max-width: 1000px) {
+        img.a {
+          height: 590px;
+        }
+      }
+
+      @media (max-width: 900px) {
+        img.a {
+          height: 360px;
+        }
+      }
+
+      @media (max-width: 800px) {
+        img.a {
+          height: 330px;
+        }
+      }
+
+      @media (max-width: 700px) {
+        img.a {
+          height: 300px;
+        }
+      }
+
+      @media (max-width: 600px) {
+        img.a {
+          height: 270px;
+        }
+      }
+
+      @media (max-width: 500px) {
+        img.a {
+          height: 250px;
+        }
+      }
+
+      @media (max-width: 400px) {
+        img.a {
+          height: 230px;
+        }
+      }
+
+      @media (max-width: 300px) {
+        img.a {
+          height: 200px;
+        }
+      }
+
+      .im:hover {
+        border-color;
+        transform: scale(1.03);
+        transition: 0.5s;
+        overflow: hidden;
+        border-radius: 10%;
+        box-shadow: 10px 10px 40px #cccccc;
+      }
+
+      /* Auto carousal-2 */
+
+      .autocarousal {
+        height: auto;
+        width: 100%;
+        overflow: hidden;
+        background: rgba(219, 219, 219, 0.9);
+      }
+
+      .slider {
+        display: inline-block;
+        width: 80%;
+        height: inherit;
+        margin-left: 10%;
+        overflow: hidden;
+        position: relative;
+        margin-top: 0;
+        filter: drop-shadow(8px 8px 14px rgb(105, 0, 119));
+      }
+
+      .slider ul {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        animation: slider 10s infinite;
+      }
+
+      .slider ul li img {
+        width: 20%;
+        float: left;
+        filter: grayscale(0.3);
+      }
+
+      img {
+        margin: 0;
+        object-fit: cover;
+      }
+
+      .slider ul li img:hover {
+        filter: grayscale(0);
+      }
+
+      .slider ul li {
+        list-style: none;
+      }
+
+      .slider .boxtext h2 {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999;
+        margin: 20px 3px;
+        text-align: center;
+        width: 80%;
+        color: white;
+      }
+
+      /* Auto carousal-2 Animation */
+
+      @keyframes slider {
+        0% {
+          left: 0;
+        }
+
+        20% {
+          left: -100%;
+        }
+
+        40% {
+          left: -100%;
+        }
+
+        60% {
+          left: -200%;
+        }
+
+        80% {
+          left: -300%;
+        }
+
+        100% {
+          left: -400%;
+        }
+      }
+
+      /* Auto carousel-2 Media query */
+
+      @media only screen and (max-width:4000px) {
+        .slider {
+          margin-top: 4%;
+          margin-bottom: 4%;
+        }
+      }
+
+      @media only screen and (max-width:690px) {
+        .slider .boxtext h2 {
+          font-size: 17px;
+        }
+
+        .slider {
+          filter: drop-shadow(4px 4px 7px rgb(34, 34, 80));
+        }
+      }
+
+      @media only screen and (max-width:489px) {
+        .slider .boxtext h2 {
+          font-size: 12px;
+        }
+      }
+
+      @media only screen and (max-width:430px) {
+        .slider .boxtext h2 {
+          font-size: 10px;
+        }
+
+        .slider {
+          filter: drop-shadow(3px 3px 5px red);
+        }
+      }
+
+      @media only screen and (max-width:379px) {
+        .slider .boxtext h2 {
+          font-size: 7px;
+          width: 100%;
+        }
+      }
+
+      @media only screen and (max-width:207px) {
+        .slider .boxtext h2 {
+          font-size: 6px;
+          width: 90%;
+        }
+      }
+
+      @media only screen and (max-width:207px) {
+        .slider .boxtext h2 {
+          display: none;
+          font-size: 6px;
+          width: 90%;
+        }
+      }
+
+      /* Footer */
+
+      footer {
+        bottom: 0px;
+        height: 250px;
+        background-color: gray;
+        color: white;
+        font-family: Verdana, sans-serif;
+        padding-top: 15px;
+        padding-left: 20px;
+      }
+
+      .table-footer {
+        height: 100px;
+        color: white;
+        float: right;
+        width: 80%;
+      }
+
+      .table-footer th {
+        font-size: 25px;
+        text-align: left;
+        text-shadow: 2px 2px black;
+      }
+
+      .table-footer td {
+        padding: 10px;
+        text-align: left;
+      }
+
+      .logo-footer {
+        float: left;
+        padding-top: 15px;
+      }
+
+      .logo {
+        height: 120px;
+        width: 120px;
+        display: inline-block;
+      }
+
+      .sub-footer {
+        height: 200px;
+      }
+
+      td a {
+        text-decoration: none;
+        color: white;
+      }
+
+      td a:hover {
+        text-decoration: underline;
+        border-radius: 5px;
+        transition: 0.42s;
+        font-size: 22px;
+      }
+
+      footer center {
+        text-shadow: 1px 1px black;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Nav bar -->
+
+    <nav>
+      <ul>
+        <li class="logo">
+         <h1 style="font-size: 20PX; padding: 50px; font-style: italic;">UNIQUE DESIGNERS</h1>
+        </li>
+        <li class="btn"><span class="fas fa-bars"></span></li>
+        <div class="items">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projectportfolio.html">Project Portfolio</a></li>
+          <li><a target="_blank" href="./group1/customerInfo.html">Order</a></li>
+          <li><a href="teampage.html">About</a></li>
+        </div>
+        <li class="search-icon">
+          <div>
+            <input
+              id="search"
+              type="search"
+              onkeyup="myfun()"
+              placeholder="Search"
+            />
+            <ul id="suggbox" style="background-color: #222268;">
+              <li><a href="./gallery-pages/livingroom.html">Living Room</a></li>
+              <li><a href="./gallery-pages/drawingroom.html">Drawing Room</a></li>
+              <li><a href="./gallery-pages/kitchen.html">Kitchen</a></li>
+              <li><a href="./gallery-pages/bedroom.html">Bed Room</a></li>
+              <li><a href="./gallery-pages/diningroom.html">Dining Room</a></li>
+              <li><a href="./gallery-pages/washroom.html">Wash Room</a></li>
+            </ul>
+          </div>
+          <label class="icon" id="icon">
+            <span class="fas fa-search"></span>
+          </label>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Auto carousel with manual buttons -->
+
+    <div class="box">
+      <div
+        class="carousel"
+        data-flickity='{ "wrapAround":true}'
+      >
+        <div class="carousel-cell" style="width: 70%;">
+          <img
+            class="a"
+            src="https://cdn.home-designing.com/wp-content/uploads/2018/03/Indoor-plants-2.jpg"
+            alt="oops! No image found"
+            width="100%"
+            height="500"
+          />
+        </div>
+        <div class="carousel-cell" style="width: 70%;">
+          <img
+            class="a"
+            src="https://i.pinimg.com/originals/b5/2d/5b/b52d5bf0a254338115e7a321e4e28201.jpg"
+            alt="oops! No image found"
+            width="100%"
+            height="500"
+          />
+        </div>
+        <div class="carousel-cell" style="width: 70%;">
+          <img
+            class="a"
+            src="https://i.pinimg.com/originals/6b/dc/fc/6bdcfc775c308754483ccfc67a869c92.jpg"
+            alt="oops! No image found"
+            width="100%"
+            height="500"
+          />
+        </div>
+        <div class="carousel-cell" style="width: 70%;">
+          <img
+            class="a"
+            src="https://housendecor.files.wordpress.com/2019/03/big-drawing-room-interior-design-deviantart-living-interior-drawing-room-design-best-ideas-stylish-decorating-designs-1.jpg"
+            alt="oops! No image found"
+            width="100%"
+            height="500"
+          />
+        </div>
+        <div class="carousel-cell" style="width: 70%;">
+          <img
+            class="a"
+            src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/sad-3751mangusta-229-1545673617.jpg"
+            alt="oops! No image found"
+            width="100%"
+            height="500"
+          />
+        </div>
+        <div class="carousel-cell" style="width: 70%;">
+          <img
+            class="a"
+            src="https://xdesktopwallpapers.com/wp-content/uploads/2012/03/Blue%20Background%20in%20Kids%20Study%20Room%20And%20Bedroom.jpg"
+            alt="oops! No image found"
+            width="100%"
+            height="500"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVICES -->
+
+    <div
+      style="
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        padding-top: 30px;
+        border: 2px solid darkgray;
+      "
+    >
+      <div
+        style="
+          width: 100%;
+          margin: 30px;
+          border: 2px solid darkgray;
+          background: rgba(219, 219, 219, 0.9);
+        "
+      >
+        <h1
+          id="ourservices"
+          style="
+            color: rgb(85, 85, 85);
+            font-size: 1.8vw;
+            border: 2px solid darkgray;
+            text-align: center;
+          "
+        >
+          Our services
+        </h1>
+        <div>
+
+          <!--para1-->
+
+          <h3 id="modern-designing" style="color: #cf65b9; font-size: 1.5vw;">
+            Modern Interior Decorating
+          </h3>
+          <img
+            class="im"
+            width="70%"
+            height="70%"
+            src="pics/2.jpg"
+            style="padding: 10px; float: right;"
+            alt="img"
+          />
+          <p style="color: grey; font-size: 1.2vw;">
+            From conception to completion we specialize in exceeding our clients
+            visions and expectations. We design custom residences and spec homes
+            to suit each individuals lifestyles and demands. We work closely
+            with various trades from inception to installation to create a
+            smooth and strait forward process for our clients to turn their
+            dream home into existence. Our creative design team customizes a
+            tailored design plan to suit all lifestyles, demographic regions,
+            and budgets to resonate with each clients target market.
+          </p>
+          <ul style="color: #cf65b9; font-size: 1.1vw;">
+            <li>Furniture & Fabric Selection</li>
+            <li>Color Specification</li>
+            <li>Lighting Design</li>
+            <li>Artwork & Accessories</li>
+            <li>Custom Window Treatments</li>
+            <li>Project Management</li>
+            <li>Hard surface & Material Selection</li>
+            <li>Architectural Drawings & Detailing</li>
+            <li>Space Planning</li>
+            <li>Architectural Critique</li>
+            <li>Exterior Furnishings & Accessories</li>
+          </ul>
+        </div>
+        <br />
+        <br />
+
+        <!-- Auto carousel 2 -->
+
+        <div class="autocarousal">
+          <div class="slider">
+            <ul>
+              <li>
+                <img
+                  src="https://i.pinimg.com/originals/97/bd/93/97bd93cd8d866eeddb4a248f7014a964.jpg"
+                  alt="cafeinterior"
+                />
+              </li>
+
+              <li>
+                <img
+                  src="https://i.pinimg.com/originals/2d/5f/84/2d5f84e0610630a1c3c33406fa47b602.jpg"
+                />
+              </li>
+              <li>
+                <img
+                  src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F636ac058-694f-11e6-998d-9617c077f056.jpg?crop=1500%2C1000%2C0%2C0"
+                />
+              </li>
+              <li>
+                <img
+                  src="https://i.pinimg.com/originals/93/ed/bd/93edbd833a798c9ec3d4d2d428953086.jpg"
+                  alt="workspace"
+                />
+              </li>
+              <li>
+                <img
+                  src="https://images.squarespace-cdn.com/content/v1/582239925016e1c5e04af652/1478909385361-Q0RNZW77V9SU380NDO3T/ke17ZwdGBToddI8pDm48kCu4snZLAjmtJVNDY7M6eVhZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIWjB5oZoL28wpBtvPO_g1O37Qpv0FumyQIjM1nFKWW4oKMshLAGzx4R3EDFOm1kBS/ADU"
+                />
+              </li>
+            </ul>
+            <div class="boxtext">
+              <h2>HOME IS WHERE THE HEART IS ....</h2>
+            </div>
+          </div>
+        </div>
+
+        <!--para-2-->
+
+        <div style="float: right;">
+          <h3 id="what-we-do" style="color: #cf65b9; font-size: 1.5vw;">
+            What we do
+          </h3>
+          <img
+            class="im"
+            width="70%"
+            height="70%"
+            src="pics/3.jpg"
+            style="padding: 10px; float: right;"
+            alt="img"
+          />
+          <p style="color: gray; font-size: 1.2vw;">
+            We create designs in a collaborative environment enabling us to
+            deliver the client’s ultimate vision. Our designs are current, yet
+            still possess a timeless style generating broad market appeal. Our
+            reputation for outstanding service and our innovative design style
+            creates an extremely successful partnership with our clients. It is
+            our passion to constantly pursue fresh inspiration. Our designers
+            continually search for the most compelling design styles and highest
+            quality of materials available. Hours of extensive market research
+            allow us to create each design specific to your target market. We
+            take pride in our work ethic, our eye for innovative designs, and
+            our commitment to our clients. Our creative design team customizes a
+            tailored design plan to suit all lifestyles, demographic regions,
+            and budgets to resonate with each clients target market.
+          </p>
+          <ul style="float: left; color: #cf65b9; font-size: 1.1vw;">
+            <li>Model Home Merchandising</li>
+            <li>Sales Office Design</li>
+            <li>Commercial Spaces</li>
+            <li>Apartment Communities & Club Houses</li>
+            <li>Residential & Spec Homes</li>
+            <li>Art Procurement</li>
+            <li>Interior Furnishing Selection</li>
+            <li>Exterior Furnishing Selection</li>
+            <li>Hard Surface & Material Selection</li>
+            <li>Accessory Implementation</li>
+            <li>FF&E Selection and Implementation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+      <div id="CONTACT"></div>
+      <div class="sub-footer">
+        <div class="logo-footer" style="width: 20%;">
+          <a href="logo.html"><img src="pics/logo1.png" id="logo" class="logo" /></a>
+        </div>
+        <table class="table-footer">
+          <tr>
+            <th>About us</th>
+            <th>Services</th>
+            <th>Contact</th>
+          </tr>
+          <tr>
+            <td><a href="projectportfolio.html">Products</a></td>
+            <td><a href="#ourservices">Our services</a></td>
+            <td>
+              <a
+                target="_blank"
+                href="https://www.facebook.com/Unique-Designers-112704957174736"
+              >
+                <img src="pics/fb2.png" height="20vw" ;width="20vw" />
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="projectportfolio.html#g">Blogs</a></td>
+            <td><a href="#modern-designing">Modern designing</a></td>
+            <td>
+              <a
+                target="_blank"
+                href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSDZqncqlzRqBMKTfDWvWQPNTclprzMKpFskVJxCFKdvzQMNHShMPcNTQDWpFPNgKvXqGPlf"
+              >
+                <img
+                  src="data:image/png;base64,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"
+                  height="20vw"
+                  ;width="20vw"
+                />
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td><a href="teampage.html">Team Page</a></td>
+            <td><a href="#what-we-do">what we do</a></td>
+            <td>
+              <a target="_blank" href="https://twitter.com/unique_designers">
+                <img src="pics/twitter.png" height="20vw" ;width="35vw" />
+              </a>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <center>Unique Designers &copy; 2020</center>
+    </footer>
+
+    
+    <script>
+      function suggsbox() {
+        var d = document.getElementById("suggbox").value;
+        document.getElementById("search").value = d;
+      }
+      function myfun() {
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById("search");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("suggbox");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          txtValue = a.textContent || a.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+          } else {
+            li[i].style.display = "none";
+          }
+        }
+      }
+      $(function () {
+        $("nav ul li.btn span").click(function () {
+          $("nav ul div.items").toggleClass("show");
+          $("nav ul li.btn span").toggleClass("show");
+        });
+      });
+    </script>
+  </body>
+</html>

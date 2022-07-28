@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width ,initial-scale=1">
+        <title>order  @ unique designers</title>
+        <link href="./css/form.css" rel="stylesheet" type="text/css">
+        <style>
+            .bg-image {
+                        background-image: url(./images/background-image.jpg);
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        background-attachment: fixed;
+                        background-size: cover;
+                        background-color:#464646;
+                        }
+        </style>
+    </head>
+    <body class = "bg-image">
+        <div class = "form-container">
+            <span class = "content">
+               <b>Welcome !</b>
+            </span>
+
+            
+
+            <p class ="quotes">Decorating is not about making stage sets, it's not about making pretty pictures for the magazines,
+                 it's really about creating a quality of life, a beauty that nourishes the soul.</p>
+
+            <div class="flex-container-form">
+                <div class ="flex-content-form" style="width:40%;background-color: RGB(218, 165, 32);">
+                    <span style="font-family: broadway;color:whitesmoke;font-size:2vw;">Collaborate with our designers to bring your dream room to life!</span>
+                    <br><br>
+                    <img class = "random-images" src = "./images/i1.jpg">
+                    <img class = "random-images" src = "./images/i2.jpg">
+                    <img class = "random-images" src = "./images/i3.jpg">
+                    <img class = "random-images" src = "./images/i4.jpg">
+                    <img class = "random-images" src = "./images/i5.jpg">
+                </div>
+
+
+                <div class ="flex-content-form"style="width:60%;background-color:RGBA(245, 245, 245);">
+                    <span class = "big-italics">Client Questionnaire</span> <br> <br>
+                   
+
+                    <form name="Client-form" action ="/submit" method ="post">
+                        <p>
+                        <label name = "f_name">First Name</label> &nbsp;&nbsp;&nbsp;
+                        <input class = "textbox" type = "text" name="f_name" placeholder="First Name">
+                        </p>
+
+                        <p>
+                            <label name = "l_name">Last Name</label> &nbsp;&nbsp;&nbsp;&nbsp;
+                            <input class = "textbox" type = "text" name="l_name" placeholder="Last Name">
+                        </p>
+
+                        <p>
+                            <label name = "contact">Contact no.</label> &nbsp;&nbsp;&nbsp;
+                            <input class = "textbox" type = "number" name="contact" placeholder="+91 ">
+                        </p>
+
+                        <p>
+                            <label name = "email">Email</label> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+                            <input class = "textbox" type = "email" name="email" placeholder="abc@gmail.com">
+                        </p>
+
+                        <p>
+                            <label name = "address">Address</label> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input class = "textbox" type = "text" name="address" placeholder="State_city_street_pin">
+                        </p>
+
+                        <p>
+                            <label name=lifestyle>Lifestyle</label>
+                            <p style="font-size:1.1vw;font-weight:normal;">Please give a brief description of your family(Include all members of the household) :</p>
+                                <textarea rows = "5" cols="60" name="family_description"></textarea>
+                            </p>
+                            <p style="font-size:1.1vw;font-weight:normal;">Describe your favourite ways to entertain (casual or formal) :</p>
+                                <textarea rows = "5" cols="60" name = "entertain"></textarea>
+                            </p>    
+                        </p>
+
+                        <p>
+                            <label name=Designproject>Design Project</label>
+                            <p style="font-size:1.1vw;font-weight:normal;">How would you describe the style of your home : <br><br>
+                                <input type = "checkbox" name = "contemporary" checked>&nbsp;&nbsp;
+                                Contemporary
+                                <br>
+                                <input type = "checkbox" name = "traditional">&nbsp;&nbsp;
+                                Traditional
+                                <br>
+                                <input type = "checkbox" name = "transitional">&nbsp;&nbsp;
+                                Transitional
+                                <br>
+                                <input type = "checkbox" name = "classic">&nbsp;&nbsp;
+                                Classic </p>
+                            </p>
+
+                            <p style="font-size:1.1vw;font-weight:normal;">What is the feasibe duration for your customization plan :<br><br>
+                                <input type = "radio" name = "duration" checked>&nbsp;&nbsp;
+                                Upto 3 Months
+                                <br>
+                                <input type = "radio" name = "duration">&nbsp;&nbsp;
+                                Approx 12 months
+                                <br>
+                                <input type = "radio" name = "duration">&nbsp;&nbsp;
+                                Maximum 1 Year
+                                <br>
+                                <input type = "radio" name = "duration">&nbsp;&nbsp;
+                                More than 1 Year </p>
+                            </p>
+
+                            <p style="font-size:1.1vw;font-weight:normal;">How many / which rooms do you want us to design :<br><br>
+                                <select name ="rooms" >
+                                    <option value ="1 room">Any 1 Room</option>
+                                    <option value ="entireHouse">Entire house</option>
+                                    <option value ="living" selected>Living Space</option>
+                                    <option value ="bedRoom">Bed Rooms</option>
+                                </select>
+                            </p>
+                        </p>
+                        <p>
+                            <button type="reset" name = "reset">RESET</button>
+                            <button type="submit" name = "submit">SUBMIT</button>
+                        </p>  
+                    </form>
+                </div>
+            </div>   
+            <p style="color:whitesmoke;font-weight:normal;text-align: center;font-size:1.2vw;">&copy; Interior Client Questionnaire . All rights reserved | Design by UNIQUE DESIGNERS</p> 
+        </div>
+         
+
+      
+
+    </body>
+</html>

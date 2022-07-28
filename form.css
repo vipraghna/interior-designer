@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+body{
+    margin:0;
+    padding:0;
+}    
+
+.form-container{
+    width:60%;
+    height:auto;
+    margin:5% 15%;
+    background-color:RGBA(225, 0,0 ,0.5);
+    padding:3% 5%;
+    box-shadow: 5px 5px 10px 5px solid black;
+    /*opacity:0.5;*/
+}
+
+.content{
+   /* opacity:1.0;*/
+    font-size: 4vw;
+    text-align:justify;
+    color: RGBA(0, 245,0 ,1.0);
+}
+
+.big-italics{
+    text-align: center;
+    font-size:3vw;
+    color: RGB(218, 165, 32);
+    box-shadow: 100000px 10px 7555px #000;
+    font-weight: bold;
+}
+p.quotes{
+    font-size:1.5vw;
+    color:RGBA(245, 245, 245,1.0);
+}
+.flex-container-form{
+    display:flex;
+    width:100%;
+    height:auto;
+}
+.flex-content-form{
+    height:auto;
+    margin:2% 0.5% ;
+    padding:2% 4%;
+    font-size:1.2vw;
+}
+
+p{
+    font-weight: bold;
+}
+
+.textbox{
+    width:13vw;
+    height:1.5rem;
+    border:1px solid #00008B;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding:0.5rem;
+    font-size: 1vw;
+    background-color: white;
+    
+    color: white;
+}
+select{
+    width:29vw;
+    height:2.4vw;
+    font-size: 1vw;
+    padding:0.5vm;
+    border:1px solid #00008B;
+    
+}
+button{
+    color:#F5F5F5;
+    font-weight:bold;
+    font-size:1vw;
+    margin:2vw 3.5vw;
+    padding:1vw 2vw;
+    border:none;
+    background-color: #00008B;
+    border-radius: 10%;
+}
+textarea{
+    border:1px solid #00008B;
+    height:5vw;
+    width:29vw;
+    padding:0.5vw;
+    font-size: 1vw;
+    transition: transform 1s;
+}
+
+textarea:focus {
+  border-color: #66e979;
+  width: 29.5vw;
+  transition: 0.425s;
+}
+select,button,input,textarea:focus{
+    outline:0;
+}
+
+.random-images{
+    background: rgba(0, 0, 255, 0.7);
+    height:15vw;
+    width:20vw;
+    border: none;
+    border:none;
+    margin:4% 0%;
+    border-radius: 15%;
+    max-width: 100%;
+    transition: transform 1s;
+
+}
+.random-images:hover {
+  border-color: black;
+  transform: scale(1.1);
+  transition: 0.5s;
+  overflow: hidden;
+  box-shadow: 10px 10px 75px #fff;
+}
+button:hover {
+  background-color: whitesmoke;
+  color: blue;
+  transition: 0.425s;
+}
+
+.textbox:focus {
+  transition: 0.425s;
+  width: 12vw;
+  height: 1vw;
+  border: 1px solid #00008b;
+  padding: 0.75rem;
+  font-size: 1vw;
+  border-radius: 15px;
+  border-color: #66e979;
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+    body {
+    background-image: url(images/background-image.jpg);
+    }
+}

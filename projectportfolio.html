@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>welcome to unique designeres </title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#search").click(function () {
+          $("#suggbox").slideToggle("fast");
+        });
+      });
+    </script>
+    <style>
+      body {
+        background: rgba(219, 219, 219, 0.8);
+      }
+      .gal{
+        align-items: center;
+        padding: 10px;
+            }
+
+      /* AUTO SLIDER ANIMATION */
+
+      @keyframes slider {
+        0% {
+          left: 0;
+        }
+
+        10% {
+          left: 0;
+        }
+
+        15% {
+          left: -50%;
+        }
+
+        20% {
+          left: -50%;
+        }
+
+        25% {
+          left: -50%;
+        }
+
+        30% {
+          left: -100%;
+        }
+
+        35% {
+          left: -100%;
+        }
+
+        40% {
+          left: -150%;
+        }
+
+        45% {
+          left: -150%;
+        }
+
+        50% {
+          left: -200%;
+        }
+
+        55% {
+          left: -200%;
+        }
+
+        60% {
+          left: -250%;
+        }
+
+        65% {
+          left: -250%;
+        }
+
+        70% {
+          left: -300%;
+        }
+
+        75% {
+          left: -300%;
+        }
+
+        80% {
+          left: -350%;
+        }
+
+        85% {
+          left: -350%;
+        }
+
+        90% {
+          left: -400%;
+        }
+
+        95% {
+          left: -400%;
+        }
+
+        100% {
+          left: -0%;
+        }
+      }
+
+      @media only screen and (max-width:700px) {
+        .gallery {
+          width: 100%;
+        }
+      }
+
+      /* @HOVER STYLING */
+
+      .im:hover {
+        border-color;
+        transform: scale(1.1);
+        transition: 0.5s;
+        overflow: hidden;
+        border-radius: 5%;
+        box-shadow: 10px 10px 40px whitesmoke;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Nav bar -->
+
+    <nav>
+      <ul>
+        <li class="logo">
+          <h1 style="font-size: 20PX; padding: 50px; font-style: italic;">UNIQUE DESIGNERS</h1>
+        </li>
+        <li class="btn"><span class="fas fa-bars"></span></li>
+        <div class="items">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projectportfolio.html">Project Portfolio</a></li>
+          <li><a target="_blank" href="./group1/customerInfo.html">Order</a></li>
+          <li><a href="teampage.html">About</a></li>
+        </div>
+        <li class="search-icon">
+          <div>
+            <input
+              id="search"
+              type="search"
+              onkeyup="myfun()"
+              placeholder="Search"
+            />
+            <ul
+              id="suggbox"
+              style="background-color: #222268; position: absolute;"
+            >
+              <li><a href="./gallery-pages/livingroom.html">Living Room</a></li>
+              <li><a href="./gallery-pages/drawingroom.html">Drawing Room</a></li>
+              <li><a href="./gallery-pages/kitchen.html">Kitchen</a></li>
+              <li><a href="./gallery-pages/bedroom.html">Bed Room</a></li>
+              <li><a href="./gallery-pages/diningroom.html">Dining Room</a></li>
+              <li><a href="./gallery-pages/washroom.html">Wash Room</a></li>
+            </ul>
+          </div>
+          <label class="icon" id="icon">
+            <span class="fas fa-search"></span>
+          </label>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- AUTO SLIDER -->
+
+    <div id="slider" style="overflow: hidden;">
+      <figure
+        style="
+          position: relative;
+          width: 300%;
+          margin: 0;
+          left: 0;
+          animation: 30s slider infinite;
+        "
+      >
+        <img style="width: 10%; float: left;" src="pics/d.jpg" />
+        <img style="width: 10%; float: left;" src="pics/c.jpg" />
+        <img style="width: 10%; float: left;" src="pics/f.jpg" />
+        <img style="width: 10%; float: left;" src="pics/h.jpg" />
+        <img style="width: 10%; float: left;" src="pics/i.jpg" />
+        <img style="width: 10%; float: left;" src="pics/j.jpg" />
+        <img style="width: 10%; float: left;" src="pics/a.jpg" />
+        <img style="width: 10%; float: left;" src="pics/e.jpg" />
+        <img style="width: 10%; float: left;" src="pics/g.jpg" />
+        <img style="width: 10%; float: left;" src="pics/b.jpg" />
+      </figure>
+    </div>
+
+    <!-- GALLERIES  -->
+     <center>
+    <div style="width: 100%;">
+      <div>
+        <div style="display: flex; justify-content: center;">
+          <h1
+            id="g"
+            style="
+              color: #386948;
+              margin: 10px;
+              border: 2px solid darkgray;
+              border-radius: 5px 5px 5px 5px;
+              font-size: 2vw;
+            "
+          >
+            GALLERY
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- LIVING ROOM -->
+
+    <div
+      class="gallery"
+      style="
+        padding: 20px;
+        float: left;
+        width: 100%;
+        border: 3px solid darkgray;
+      "
+    >
+      <div class="gal" style="border: 1px solid #ccc;">
+        <a href="gallery-pages/livingroom.html"
+          ><img
+            class="im"
+            style="width: 70%; height: auto;"
+            src="pics/LR.jpg"
+            width="300"
+            height="200"
+        /></a>
+      </div>
+    </div>
+
+    <!-- DRAWING ROOM -->
+
+    <div
+      class="gallery"
+      style="
+        padding: 20px;
+        float: left;
+        width: 100%;
+        border: 3px solid darkgray;
+      "
+    >
+      <div class="gal" style="border: 1px solid #ccc;">
+        <a href="gallery-pages/drawingroom.html"
+          ><img
+            class="im"
+            style="width: 70%; height: auto;"
+            src="pics/DR.jpg"
+            width="300"
+            height="200"
+        /></a>
+      </div>
+    </div>
+
+    <!-- KITCHEN -->
+
+    <div
+      class="gallery"
+      style="
+        padding: 20px;
+        float: left;
+        width: 100%;
+        border: 3px solid darkgray;
+      "
+    >
+      <div class="gal" style="border: 1px solid #ccc;">
+        <a href="gallery-pages/kitchen.html"
+          ><img
+            class="im"
+            style="width: 70%; height: auto;"
+            src="pics/K.jpg"
+            width="300"
+            height="200"
+        /></a>
+      </div>
+    </div>
+
+    <!-- BEDROOM -->
+
+    <div
+      class="gallery"
+      style="
+        padding: 20px;
+        float: left;
+        width: 100%;
+        border: 3px solid darkgray;
+      "
+    >
+      <div class="gal" style="border: 1px solid #ccc;">
+        <a href="gallery-pages/bedroom.html"
+          ><img
+            class="im"
+            style="width: 70%; height: auto;"
+            src="pics/BR.jpg"
+            width="300"
+            height="200"
+        /></a>
+      </div>
+    </div>
+
+    <!-- DINING ROOM -->
+
+    <div
+      class="gallery"
+      style="
+        padding: 20px;
+        float: left;
+        width: 100%;
+        border: 3px solid darkgray;
+      "
+    >
+      <div class="gal" style="border: 1px solid #ccc;">
+        <a href="gallery-pages/diningroom.html"
+          ><img
+            class="im"
+            style="width: 70%; height: auto;"
+            src="pics/DR1.png"
+            width="300"
+            height="200"
+        /></a>
+      </div>
+    </div>
+
+    <!-- WASHROOM -->
+
+    <div
+      class="gallery"
+      style="
+        padding: 20px;
+        float: left;
+        width: 100%;
+        border: 3px solid darkgray;
+      "
+    >
+      <div class="gal" style="border: 1px solid #ccc;">
+        <a href="gallery-pages/washroom.html"
+          ><img
+            class="im"
+            style="width: 70%; height: auto;"
+            src="pics/WR.jpg"
+            width="300"
+            height="200"
+        /></a>
+      </div>
+    </div>
+  </center>
+
+    <!-- FOOTER MODEL 2 (PAGE-2) -->
+
+    <div
+      class="gallery"
+      style="
+        padding: 20px;
+        float: left;
+        width: 100%;
+        background: darkgray;
+        border: 3px solid darkgray;
+      "
+    >
+      <div
+        style="
+          display: flex;
+          justify-content: space-evenly;
+          position: relative;
+          bottom: 0;
+        "
+      >
+        <div style="font-size: 1vh;">
+          <p
+            style="
+              color: black;
+              font-weight: normal;
+              text-align: center;
+              font-size: 1.5vw;
+            "
+          >
+            &copy;Copyright 2020 UNIQUE DESIGNERS
+          </p>
+        </div>
+        <a
+          target="_blank"
+          href="https://www.facebook.com/UNIQUE DESIGNERS-112704957174736"
+        >
+          <img src="pics/fb.png" height="30vw" ;width="30vw" />
+        </a>
+        <a target="_blank" href="https://www.instagram.com/unique__designers/">
+          <img src="pics/insta.png" height="30vw" ;="" width="30vw" />
+        </a>
+        <a target="_blank" href="https://twitter.com/unique_designers">
+          <img src="pics/twitter.png" height="30vw" ;width="30vw" />
+        </a>
+        <a
+          target="_blank"
+          href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSDZqncqlzRqBMKTfDWvWQPNTclprzMKpFskVJxCFKdvzQMNHShMPcNTQDWpFPNgKvXqGPlf"
+        >
+          <img
+            src="data:image/png;base64,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"
+            height="30vw"
+            ;width="30vw"
+          />
+        </a>
+      </div>
+    </div>
+
+
+    <script>
+      function suggsbox() {
+        var d = document.getElementById("suggbox").value;
+        document.getElementById("search").value = d;
+      }
+      function myfun() {
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById("search");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("suggbox");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          txtValue = a.textContent || a.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+          } else {
+            li[i].style.display = "none";
+          }
+        }
+      }
+      $(function () {
+        $("nav ul li.btn span").click(function () {
+          $("nav ul div.items").toggleClass("show");
+          $("nav ul li.btn span").toggleClass("show");
+        });
+      });
+    </script>
+  </body>
+</html>
